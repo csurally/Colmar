@@ -86,7 +86,6 @@ header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	//margin-right: 24px;
 }
 .links span {
 	margin: 0 20px;
@@ -110,11 +109,10 @@ header {
 .bannerImage {
 	width: 60%;
 }
-.bannerContent {
-	display: flex;
-}
+
 .bannerContent img{
 	padding: 32px 24px;
+	max-width: 100%;
 }
 .container {
 	display: flex;
@@ -136,11 +134,11 @@ header {
 }
 .mainContent {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 }
 .mainContent img {
 	padding: 32px 24px;	
+	max-width: 95%;
 }
 .blockquote {
 	margin: 0 0 24px 24px;
@@ -151,9 +149,6 @@ header {
 	margin: 24px 0;
 }
 .sideContainer {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin-top: 32px;
 }
 .sideContainer .hide{
@@ -162,18 +157,19 @@ header {
 .sideContent h3{
 	margin-bottom: 8px;
 }
-.side {
-	display: flex;
-}
 .side img {
+	display: inline-block;
+	vertical-align: middle;
 	max-width: 35%;
-	margin: 0 0 20px 0;
+	margin: 0px;
 	padding: 16px;
 }
+.side:first-child img{
+	padding-top: 0px;	
+}
 .content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	display: inline-block;
+	vertical-align: middle;
 }
 .lecture {
 	background-color: #d8d8d8;
@@ -202,7 +198,7 @@ header {
 	max-width: 300px;
 	margin-right: 25px;
 }
-.product-image {
+.product-image img{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -221,12 +217,20 @@ strong {
 	font-weight: bold;
 }
 /*   Thesis   */
+.thesis {
+	margin-left: 45px;	
+}
+.thesis img{
+	padding: 16px 9px;	
+}
+
 #title {
 	text-align: center;
 	padding-top: 32px;
 }
 .fisma {
 	background-color: #d8d8d8; /*Grey*/
+	padding-top: 16px;
 }
 .mainContent video {
 	padding: 32px 24px;	
